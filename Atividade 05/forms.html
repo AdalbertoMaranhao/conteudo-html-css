@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <form action="# " method="get">
+    <!-- action é o lugar para onde 
+    irão as informações do meu formulário.
+    method é como essa informação vai 
+    ser transportada.-->
+    Usuario: <input type="text" placeholder="Digite seu nome"
+    id="nome" name="nome"><br>
+    Senha: <input type="password" id="senha" name="senha"
+    placeholder="Digite uma senha" minlength="4" 
+    maxlength="10"><br>
+
+    <p>selecione o curso</p>
+    <input type="radio" value="info" 
+    name="curso" id="curso" checked> Informática <br>
+    <input type="radio" value="adm" 
+    name="curso" id="curso"> Administração <br>
+    <input type="radio" value="eletro" 
+    name="curso" id="curso"> Eletrotécnica <br>
+    <input type="radio" value="mec" 
+    name="curso" id="curso"> Mecânica <br>
+
+    <p>disciplinas</p>
+    <input type="checkbox" name="disciplinas" 
+    id="disciplinas" value="html" checked> HTML <br>
+    <input type="checkbox" name="disciplinas" 
+    id="disciplinas" value="bd"> Banco de Dados <br>
+    <input type="checkbox" name="disciplinas" 
+    id="disciplinas" value="redes"> Redes <br>
+    <input type="checkbox" name="disciplinas" 
+    id="disciplinas" value="Java"> Java <br>
+    
+    <p>nivel de acesso</p>
+    <select name="acesso" id="acesso">
+        <option value="">Selecione</option>
+        <option value="1">Administrador</option>    
+        <option value="2">Financeiro</option>    
+        <option value="3">Usuário</option>    
+    </select>
+    
+    <p>caixa de sugestões</p>
+    <textarea id="sugestao" name="sugestao"
+    rows="10" cols="100"
+    placeholder="Digite uma sugestão"></textarea>
+
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Apagar">
+    </form>
+</body>
+</html>
