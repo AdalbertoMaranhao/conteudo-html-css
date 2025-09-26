@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela HTML5</title>
+</head>
+<body>
+    <table>
+        <caption>Produzidos x Vendidos por Loja</caption>
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: greenyellow;">
+        </colgroup>
+
+        <thead>
+            <!--para os leitores de tela é avisar que a loja tem um escopo-->
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Alex Pena</th>
+                <th colspan="2" scope="colgroup">Maria Pereira</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>40</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>50</td>
+                <td>30</td>
+                <td>40</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <!--O <tfoot> é um elemento HTML que define um conjunto de linhas como quais parte do rodapé de uma tabela HTML-->
+        <tfoot>
+            <tr>
+                <th scope="row">Totals</th>
+                <td colspan="4">R$ 340,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

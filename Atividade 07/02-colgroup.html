@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela HTML5</title>
+</head>
+<body>
+    <table>
+        <caption>Produzidos x Vendidos por Loja</caption>
+
+        <!--A <colgroup>tag especifica um grupo de uma ou mais colunas em uma tabela para formatação.
+A <colgroup>tag é útil para aplicar estilos a colunas inteiras, em vez de repetir os estilos para cada célula, para cada linha.
+Observação: a <colgroup>tag deve ser filha de um elemento <table>, após qualquer elemento <caption> e antes de qualquer elemento <thead>, <tbody>, <tfoot> e <tr>.
+Dica: Para definir diferentes propriedades para uma coluna dentro de um <colgroup>, use a tag <col> dentro da <colgroup>tag.-->
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Alex Pena</th>
+                <th colspan="2">Maria Pereira</th>
+            </tr>
+            <tr>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>40</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>50</td>
+                <td>30</td>
+                <td>40</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
