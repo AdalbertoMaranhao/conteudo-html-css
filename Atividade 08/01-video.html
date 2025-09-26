@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <video>
+    - src
+    - Controls
+    -se não funcionar?
+        fallback content
+    - Source
+        - src
+        - type
+    - Sobre serviços de terceiros
+    -->
+    <video src="assets/video/aluna_informatica~1.mp4" controls>
+        <p>Browser não suporta vídeo</p>
+    </video>
+    <br>
+    <!--O controlsatributo adiciona controles de vídeo, como reproduzir, pausar e volume.
+É uma boa ideia incluir sempre widthe heightatributos. Se a altura e a largura não estiverem definidas, a página poderá piscar enquanto o vídeo é carregado.
+O <source>elemento permite especificar arquivos de vídeo alternativos que o navegador pode escolher. O navegador usará o primeiro formato reconhecido.
+O texto entre as tags <video>e </video>só será exibido em navegadores que não suportam o <video>elemento.-->
+    <video width="320" height="240" controls>
+        <source src="assets/video/aluna_informatica~1.mp4" type="video/mp4">
+        <p>Browser não suporta vídeo</p>
+    </video>
+    <video width="320" height="240" controls autoplay>
+        <source src="assets/video/aluna_informatica~1.mp4" type="video/mp4">
+        <p>Browser não suporta vídeo</p>
+    </video>
+    <!--Adicione muteddepois autoplay para permitir que seu vídeo comece a ser reproduzido automaticamente (mas silenciado):-->
+    <video width="320" height="240" controls autoplay muted>
+        <source src="assets/video/aluna_informatica~1.mp4" type="video/mp4">
+        <p>Browser não suporta vídeo</p>
+    </video>
+    <!--Preload=auto baixa antes de rodar o vídeo-->
+    <video width="320" height="240" controls autoplay muted preload="auto">
+        <source src="assets/video/aluna_informatica~1.mp4" type="video/mp4">
+        <p>Browser não suporta vídeo</p>
+    </video>
+    <!--poster deixa uma imagem de fundo antes de começar o vídeo-->
+    <video width="320" height="240" controls poster="">
+        <source src="assets/video/aluna_informatica~1.mp4" type="video/mp4">
+        <p>Browser não suporta vídeo</p>
+    </video>
+    <video width="320" height="240" controls poster="">
+        <source src="https://www.youtube.com/watch?v=1bEbBkWc4-I&list=PL29TaWXah3iZktD5o1IHbc7JDqG_80iOm" type="video/mp4">
+        <p>Browser não suporta vídeo</p>
+    </video>
+    <!--incorporaçao de video externo do youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1bEbBkWc4-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
