@@ -1,0 +1,41 @@
+<form action="">
+    <input type="email" placeholder="opa" value="dasda" /><br />
+    <!---multiple * o campo irá receber 1 ou mais emails, separado por vírgulas-->
+    <input type="email" multiple placeholder="multiple" /><br />
+    <!---minlenght / maxlength* 0 mínimo e/ou máximo valor que o campo irá conter-->
+    <input
+      type="email"
+      minlength="8"
+      maxlength="20"
+      placeholder="min e max"
+    /><br />
+    <!---size indicando ao tamanho  numérico indicando quantos caracteres -->
+    <input type="email" size="8" /><br />
+  </form>
+  <form action="">
+    <!---Uso de expressão regular para validar o campo - exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br
+  * pattern=".+@growdev\.com\.br" -->
+    <input
+      type="email"
+      pattern=".+@growdev\.com\.br"
+      title="Somente emails growdev.com.br serão aceitos"
+    /><br />
+    <button type="submit">Enviar</button>
+  </form>
+  <form action="">
+    <!---- list
+  *o id de uma tag <datalist> que está no mesmo documento 
+  * <datalist> irá conter uma lista de valores prédefinidos a fim de sugerir ao usuário, quais valores estão disponíveis
+  * Os valores do <datalist> que não forem
+  compatíveis com o campo, não serão apresentados
+  como sugestão
+  -->
+      <datalist id="emailslist">
+          <option>Apple</option>
+          <option>Google</option>
+          <option>Microsoft</option>
+      </datalist>
+    <input type="email" list="emailslist"/><br />
+    <button type="submit">Enviar</button>
+  </form>
+  
